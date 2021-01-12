@@ -1,0 +1,29 @@
+// 프로그래머스 고득점 kit 스택/큐 - 기능개발
+import java.util.*;
+
+public class practice2 {
+	public static int[] solution(int[] progresses, int[] speeds) {
+        var q = new ArrayList<Integer>();
+        for(int i = 0; i < progresses.length; i++) {
+        	q.add(progresses[i]);
+        }
+        for(int i = 0; i < progresses.length; i++) {
+        	
+        }
+		int[] answer = new int[];
+        
+        
+        
+        return answer;
+    }
+	
+	public static void main(String[] args) {
+		int[] progresses = {93, 30, 55};
+		int[] speeds = {1, 30, 5};
+		int[] answer = solution(progresses, speeds);
+		
+		for (int i = 0; i < answer.length; i++) {
+            System.out.print(answer[i] + " ");
+		}
+	}
+}
