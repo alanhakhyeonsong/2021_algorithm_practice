@@ -1,0 +1,17 @@
+// BOJ 1110번: 더하기 사이클
+import java.util.*;
+public class practice5 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		int temp;
+		int count = 0;
+		while(true) {
+			temp = ((N / 10) + (N % 10)) % 10 + (N / 10) * 10;
+			count += 1;
+			if(N == temp)
+				break;
+		}
+		System.out.println(count);
+	}
+}
