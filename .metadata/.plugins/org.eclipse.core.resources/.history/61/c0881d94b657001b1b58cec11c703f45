@@ -1,0 +1,11 @@
+// 프로그래머스 고득점 kit 스택/큐 - 프린터
+import java.util.*;
+public class practice10 {
+	public static int solution(int[] priorities, int location) {
+		int answer = 0;
+		return answer;
+	}
+	public static void main(String[] args) {
+		
+	}
+}
