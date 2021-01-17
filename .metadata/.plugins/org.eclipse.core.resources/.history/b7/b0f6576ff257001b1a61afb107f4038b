@@ -12,20 +12,20 @@ public class practice2 {
         	listSpe.add(speeds[i]);
         }
         
-        while(!listPro.isEmpty()) {	// Progress 큐가 빌 때 까지 반복합니다.
-        	int count = 0;	// 배포할 기능의 개수를 나타내는 count 변수입니다.
-        	while(listPro.get(0) < 100) {	// 큐의 첫번째 요소가 100보다 작은지 판단하며 루프를 돌게 됩니다.
+        while(!listPro.isEmpty()) {
+        	int count = 0;
+        	while(listPro.get(0) < 100) {
         		for(int i = 0; i < listPro.size(); i++)
-        			listPro.set(i, listPro.get(i) + listSpe.get(i));	// 작업의 진도 + 속도  >= 100 이면 배포함을 나타냅니다.
+        			listPro.set(i, listPro.get(i) + listSpe.get(i));
         	}
         	for(int i = 0; i < listPro.size(); i++) {
-        		if(listPro.get(i) >= 100)	// 루프를 차례대로 돌며 작업의 결과가 100 이상인 것이 있다면 count 값 증가
+        		if(listPro.get(i) >= 100)
         			count++;
         		else break;
         	}
-        	listAns.add(count);	// 증가시켰던 count 값을 Answer큐에 넣습니다.
+        	listAns.add(count);
         	
-        	while(count-- > 0) {	// 큐에서 맨 앞 요소를 빼는 것인데 count 값을 감소시키고 뺍니다(이미 배포한 작업들을 큐에서 빼는 과정)
+        	while(count-- > 0) {
         		listPro.remove(0);
         		listSpe.remove(0);
         	}
