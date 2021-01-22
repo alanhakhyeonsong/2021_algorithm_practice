@@ -1,7 +1,0 @@
-// BOJ 2577번: 숫자의 개수
-import java.util.*;
-public class practice7 {
-	public static void main(String[] args) {
-		
-	}
-}
