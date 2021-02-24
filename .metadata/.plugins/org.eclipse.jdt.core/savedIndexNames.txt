@@ -1,9 +1,0 @@
-INDEX VERSION 1.131+C:\Users\songs4805\eclipse-workspace\2021_Algorithm_Practice\.metadata\.plugins\org.eclipse.jdt.core
-3271193799.index
-1750221287.index
-1745633766.index
-3491353804.index
-163122229.index
-1999716472.index
-1362932203.index
-428394755.index
